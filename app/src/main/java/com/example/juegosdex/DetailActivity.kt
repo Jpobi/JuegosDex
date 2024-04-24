@@ -2,14 +2,11 @@ package com.example.juegosdex
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
 import android.view.View
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.constraintlayout.widget.ConstraintSet
-import androidx.constraintlayout.widget.ConstraintSet.Constraint
-import androidx.constraintlayout.widget.ConstraintSet.WRAP_CONTENT
 import com.bumptech.glide.Glide
 
 class DetailActivity : AppCompatActivity() {
@@ -20,9 +17,6 @@ class DetailActivity : AppCompatActivity() {
     private lateinit var logo : ImageView
     private lateinit var genreImg: ImageView
 
-    private var ratingCount=0
-    private lateinit var starImg: ImageView
-    private lateinit var constraintLayout: ConstraintLayout
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_detail)
@@ -56,7 +50,7 @@ class DetailActivity : AppCompatActivity() {
         }
         genreImg.setImageResource(image)
 
-
+//crear estrellas = al rating
         var ratingCount = game?.rating ?: 0
         var leftId = R.id.detail_genre
         var marginLeft = 100

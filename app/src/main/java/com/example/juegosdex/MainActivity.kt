@@ -3,10 +3,8 @@ package com.example.juegosdex
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.LinearLayout
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import androidx.recyclerview.widget.RecyclerView.LayoutManager
 
 class MainActivity : AppCompatActivity() {
 private lateinit var recView: RecyclerView
@@ -21,7 +19,7 @@ private lateinit var adapter: Adapter
         adapter.submitList(getList())
         recView.adapter=adapter
         adapter.onItemClickListener={
-            var intent= Intent(this,DetailActivity::class.java)
+            val intent= Intent(this,DetailActivity::class.java)
             intent.putExtra("game",it)
             startActivity(intent)
         }
