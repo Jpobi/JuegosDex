@@ -30,11 +30,11 @@
 
     <TextView
         android:id="@+id/year"
-        android:layout_width="wrap_content"
+        android:layout_width="50dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="16dp"
-        android:layout_marginEnd="10dp"
+        android:layout_marginEnd="8dp"
         android:text="year"
         app:layout_constraintEnd_toStartOf="@id/rating"
         app:layout_constraintStart_toEndOf="@+id/name"
@@ -42,12 +42,12 @@
 
     <TextView
         android:id="@+id/rating"
-        android:layout_width="wrap_content"
-        android:layout_height="0dp"
+        android:layout_width="25dp"
+        android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="4dp"
-        android:text="rating"
+        android:text="--"
         app:layout_constraintEnd_toStartOf="@+id/genreImg"
         app:layout_constraintStart_toEndOf="@+id/year"
         app:layout_constraintTop_toTopOf="parent" />
